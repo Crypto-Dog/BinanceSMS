@@ -5,10 +5,13 @@ In order for everything to work, you will need to setup a few things...
 
 Python 3 is needed
 Pip3 is needed
-    sudo apt install python3-pip
+```
+sudo apt install python3-pip
+```    
 When Python3 and pip3 are installed, you need to install python-binance
-    pip3 install python-binance
-    
+```
+pip3 install python-binance
+``` 
 Now you need to do is set up a GMail account specifically for this bot. You
 do not want to use your regualar email because we will be forwarding all emails
 to a phone number.
@@ -40,8 +43,14 @@ AWS, but free tier only covers 700 hours a month and then you have to start payi
     sudo apt install screen
 
 Screen instructions:
-Create a new screen: screen -S screenName
-Exit screen: Ctrl + a + d
+Create a new screen:
+```
+screen -S screenName
+```
+Exit screen: 
+```
+Ctrl + a + d
+```
 Switch to screen: screen -r screenName
 
 HOW TO RUN THE BOT:
@@ -49,8 +58,9 @@ Make sure you have changed all the values in the config.py file and have all the
 files downloaded in the same location.
 Start a new screen and attach to it.
 (When you first create a screen, you are automatically attached to it)
-    screen -S screenName
-    python3 startBot.py
-
+```
+screen -S screenName
+python3 startBot.py
+```
 That's it. Now the bot will start running 24/7. You can detatch from the screen
 using Ctrl + a + d without stopping the script.   
